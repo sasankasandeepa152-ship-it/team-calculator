@@ -1,0 +1,89 @@
+
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #eff6ff;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Calculator heading */
+h1 {
+    margin-bottom: 28px;
+    color: #1d4ed8;
+    font-size: 32px;
+}
+
+/* Input labels */
+label {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Number input fields */
+input[type="number"] {
+    width: 280px;
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    font-size: 16px;
+}
+
+/* Add button */
+button {
+    padding: 12px 30px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Keyboard focus */
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* Result area */
+#result {
+    width: 280px;
+    max-width: 100%;
+    min-height: 48px;
+    margin-top: 22px;
+    padding: 14px;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
